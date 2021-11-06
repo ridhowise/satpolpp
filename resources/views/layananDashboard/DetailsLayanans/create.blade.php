@@ -27,7 +27,7 @@
                     <h2>Buat Post</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('details-layanan.index') }}"> Kembali</a>
+                    <a class="btn btn-secondary" href="/dashboard/postingan"> Kembali</a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
             </div>
         @endif -->
         
-        <form action="{{ route('details-layanan.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="/dashboard/postingan" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">

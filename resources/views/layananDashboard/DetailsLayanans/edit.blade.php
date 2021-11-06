@@ -33,7 +33,7 @@
                     <h2>Ubah Post</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('details-layanan.index') }}">Kembali</a>
+                    <a class="btn btn-secondary" href="/dashboard/postingan">Kembali</a>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
             </div>
         @endif
     
-        <form action="{{ route('details-layanan.update',$detailsLayanan->id) }}" method="POST" enctype="multipart/form-data"n>
+        <form action="/dashboard/postingan/{{$detailsLayanan->id}}" method="POST" enctype="multipart/form-data"n>
             @csrf
             @method('PUT')
             <div class="row">

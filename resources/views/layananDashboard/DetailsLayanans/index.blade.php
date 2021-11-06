@@ -48,9 +48,9 @@
                         <td>{{$DetailsLayanan->title}}</td>
                         <td>{{$DetailsLayanan->subtitle}}</td>
                         <td class="text-center">
-                            <form action="/dashboard/postingan/{id}" method="POST">
-                                <a class="btn btn-info btn-sm" href="kategori/{{$DetailsLayanan->layanan->slug}}/{{$DetailsLayanan->slug}}">Tampilan Web</a>
-                                <a class="btn btn-primary btn-sm" href="/dashboard/postingan/{id}/edit">Ubah</a>         
+                            <form action="/dashboard/postingan/{{$DetailsLayanan->id}}" method="POST">
+                                <a class="btn btn-info btn-sm" href="/kategori/{{$DetailsLayanan->layanan->slug}}/{{$DetailsLayanan->slug}}">Tampilan Web</a>
+                                <a class="btn btn-primary btn-sm" href="/dashboard/postingan/{{$DetailsLayanan->id}}/edit">Ubah</a>         
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</button>

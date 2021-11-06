@@ -148,7 +148,7 @@ class DetailsLayananController extends Controller
         // $DetailsLayanan->update($request->all());
         
         /// setelah berhasil mengubah data
-        return redirect()->action([LayananController::class,'index'])->with('success','DetailsLayanan updated successfully');
+        return redirect()->action([DetailsLayananController::class,'index'])->with('success','DetailsLayanan updated successfully');
     }
   
     public function destroy($id)
