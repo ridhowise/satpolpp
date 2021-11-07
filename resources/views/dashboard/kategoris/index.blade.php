@@ -35,12 +35,12 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                @foreach ($Layanans as $layanan)
+                @foreach ($Kategoris as $Kategori)
                     <tr>
-                        <td> {{$layanan->nama}} </td>
+                        <td> {{$Kategori->nama}} </td>
                         <td class="text-center">
-                            <form action="/dashboard/kategori/{{$layanan->id}}" method="POST">
-                                <a class="btn btn-primary btn-sm" href="/dashboard/kategori/{{$layanan->id}}/edit">Ubah</a>         
+                            <form action="/dashboard/kategori/{{$Kategori->id}}" method="POST">
+                                <a class="btn btn-primary btn-sm" href="/dashboard/kategori/{{$Kategori->id}}/edit">Ubah</a>         
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</button>

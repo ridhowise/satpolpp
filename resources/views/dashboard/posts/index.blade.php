@@ -41,16 +41,16 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                @foreach ($DetailsLayanans as $DetailsLayanan)
+                @foreach ($Posts as $Post)
                     <tr>
-                        <td style="text-align:center" >{{$DetailsLayanan->layanan->nama}}</td>
-                        <td style="text-align:center" >{{$DetailsLayanan->image}}</td>
-                        <td>{{$DetailsLayanan->title}}</td>
-                        <td>{{$DetailsLayanan->subtitle}}</td>
+                        <td style="text-align:center" >{{$Post->kategori->nama}}</td>
+                        <td style="text-align:center" >{{$Post->image}}</td>
+                        <td>{{$Post->title}}</td>
+                        <td>{{$Post->subtitle}}</td>
                         <td class="text-center">
-                            <form action="/dashboard/postingan/{{$DetailsLayanan->id}}" method="POST">
-                                <a class="btn btn-info btn-sm" href="/kategori/{{$DetailsLayanan->layanan->slug}}/{{$DetailsLayanan->slug}}">Tampilan Web</a>
-                                <a class="btn btn-primary btn-sm" href="/dashboard/postingan/{{$DetailsLayanan->id}}/edit">Ubah</a>         
+                            <form action="/dashboard/postingan/{{$Post->id}}" method="POST">
+                                <a class="btn btn-info btn-sm" href="/kategori/{{$Post->kategori->slug}}/{{$Post->slug}}">Tampilan Web</a>
+                                <a class="btn btn-primary btn-sm" href="/dashboard/postingan/{{$Post->id}}/edit">Ubah</a>         
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</button>

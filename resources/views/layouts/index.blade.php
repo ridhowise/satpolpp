@@ -62,7 +62,7 @@
 
           <!-- <li  class="dropdown"><a href="#"><span></span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              @foreach ($Layananz as $layanan)
+              @foreach ($Kategoriz as $layanan)
               <li><a href="/layanans/{{$layanan->id}}/{{$layanan->slug}}">{{$layanan->nama}}</a></li>
               @endforeach
               
@@ -120,7 +120,7 @@
       <!-- <div class="col-lg-3 col-md-6 footer-links">
         <h4>Fitur dan Layanan</h4>
         <ul>
-          @foreach ($Layananz as $layanan)
+          @foreach ($Kategoriz as $layanan)
             <li><i class="bx bx-chevron-right"></i> <a href="/layanans/{{$layanan->id}}/{{$layanan->slug}}">{{$layanan->nama}}</a></li>  
           @endforeach
         </ul>

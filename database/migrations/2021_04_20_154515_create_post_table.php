@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateObjekWisataTable extends Migration
+class CreatePostTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,17 @@ class CreateObjekWisataTable extends Migration
      */
     public function up()
     {
-        Schema::create('objek_wisata', function (Blueprint $table) {
+        Schema::create('post', function (Blueprint $table) {
             $table->id();
-            $table->string('namaObjekWisata');
-            $table->string('slugObjekWisata');
+            $table->string('title');
+            $table->string('slug');
             $table->string('image');
-            $table->longText('detailsObjekWisata');
+            $table->string('subtitle');
+            $table->longText('details');
             $table->timestamps();
         });
-        Schema::table('objek_wisata', function (Blueprint $table) {
-            $table->foreignId('layanan_id')->constrained('layanan')->onDelete('cascade');
+        Schema::table('post', function (Blueprint $table) {
+            $table->foreignId('kategori_id')->constrained('kategori')->onDelete('cascade');
         });
     }
 
@@ -33,6 +34,6 @@ class CreateObjekWisataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('objek_wisata');
+        Schema::dropIfExists('post');
     }
 }

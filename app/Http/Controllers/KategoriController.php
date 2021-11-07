@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Str;
  
 use Illuminate\Http\Request;
-use App\Models\Layanan;
+use App\Models\Kategori;
   
-class LayananController extends Controller
+class KategoriController extends Controller
 {
     // public function __construct()
     // {
@@ -21,26 +21,26 @@ class LayananController extends Controller
     {
         /// mengambil data terakhir dan pagination 5 list
 
-        $Layanans = Layanan::orderBy('id','desc')->get();
+        $Kategoris = Kategori::orderBy('id','desc')->get();
         // dd($Layanans);
         /// mengirimkan variabel $Layanans ke halaman views Layanans/index.blade.php
         /// include dengan number index
-        return view('layananDashboard.Layanans.index', compact('Layanans'));
+        return view('dashboard.kategoris.index', compact('Kategoris'));
             // ->with('i', (request()->input('page', 1) - 1) * 5);
     }
   
     public function create()
     {
         /// menampilkan halaman create
-        return view('layananDashboard.Layanans.create');
+        return view('dashboard.kategoris.create');
     }
   
     public function store(Request $request)
     {
         /// membuat validasi untuk title dan content wajib diisi
         $request->validate([
-            'nama' => 'required|unique:layanan,nama',
-            'icon' => 'required|unique:layanan,icon',
+            'nama' => 'required|unique:kategori,nama',
+            'icon' => 'required|unique:kategori,icon',
         ]);
         
         $slug = Str::slug($request->nama, '-');
@@ -48,28 +48,28 @@ class LayananController extends Controller
         // dd($request->all());
         /// insert setiap request dari form ke dalam database via model
         /// jika menggunakan metode ini, maka nama field dan nama form harus sama
-        Layanan::create($request->all());
+        Kategori::create($request->all());
         
          
         /// redirect jika sukses menyimpan data
-        return redirect()->action([LayananController::class,'index'])
-                        ->with('success','Layanan created successfully.');
+        return redirect()->action([KategoriController::class,'index'])
+                        ->with('success','Kategori created successfully.');
     }
   
-    public function show(Layanan $layanan)
-    {
-        /// dengan menggunakan resource, kita bisa memanfaatkan model sebagai parameter
-        /// berdasarkan id yang dipilih
-        return view('layananDashboard.Layanans.show',compact('layanan'));
-    }
+    // public function show(Kategori $kategori)
+    // {
+    //     /// dengan menggunakan resource, kita bisa memanfaatkan model sebagai parameter
+    //     /// berdasarkan id yang dipilih
+    //     return view('dashboard.kategori.show',compact('kategori'));
+    // }
   
     public function edit($id)
     {
         /// dengan menggunakan resource, kita bisa memanfaatkan model sebagai parameter
         /// berdasarkan id yang dipilih
-        $layanan = Layanan::findorfail($id);
+        $Kategori = Kategori::findorfail($id);
 
-        return view('layananDashboard.Layanans.edit',compact('layanan'));
+        return view('dashboard.Kategoris.edit',compact('Kategori'));
     }
   
     public function update(Request $request, $id)
@@ -78,7 +78,7 @@ class LayananController extends Controller
         $request['slug'] = $slug;
         
         // $id = $request->input('id');
-        $data = Layanan::findorfail($id);
+        $data = Kategori::findorfail($id);
         
         /// membuat validasi untuk title dan content wajib diisi
         // $request->validate([
@@ -94,16 +94,16 @@ class LayananController extends Controller
         $data->update();
          
         /// setelah berhasil mengubah data
-        return redirect()->action([LayananController::class,'index'])->with('success','Layanan updated successfully');
+        return redirect()->action([KategoriController::class,'index'])->with('success','Layanan updated successfully');
     }
   
     public function destroy($id)
     {
         /// melakukan hapus data berdasarkan parameter yang dikirimkan
-        $data = Layanan::findorfail($id);
+        $data = Kategori::findorfail($id);
         $data->delete();
   
-        return redirect()->action([LayananController::class,'index'])
+        return redirect()->action([KategoriController::class,'index'])
                         ->with('success','Layanan deleted successfully');
     }
 }

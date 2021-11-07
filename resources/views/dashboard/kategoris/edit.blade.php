@@ -50,21 +50,21 @@
             </div>
         @endif
         
-        <form action="/dashboard/kategori/{{$layanan->id}}" method="POST" enctype="multipart/form-data"n>
+        <form action="/dashboard/kategori/{{$Kategori->id}}" method="POST" enctype="multipart/form-data"n>
             @csrf
             @method('PUT')
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Nama:</strong>
-                        <input style="width:50%" type="text" name="nama" value="{{$layanan->nama}}" class="form-control" placeholder="Nama">
+                        <input style="width:50%" type="text" name="nama" value="{{$Kategori->nama}}" class="form-control" placeholder="Nama">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Icon:</strong><br>
                         <select style="width:50%" name="icon"  class="form-control" >
-                            <option value="{{ $layanan->icon }}">{{ $layanan->icon }}</option>
+                            <option value="{{ $Kategori->icon }}">{{ $Kategori->icon }}</option>
                                <option value='fa-address-book'>&#xf2b9; fa-address-book</option>
                                <option value='fa-address-book-o'>&#xf2ba; fa-address-book-o</option>
                                <option value='fa-address-card'>&#xf2bb; fa-address-card</option>
@@ -856,14 +856,14 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Color Picker:</strong>
-                        <input style="width:10%" type="color" name="color"  class="form-control" id="colorpicker" value="{{ $layanan->color }}">
+                        <input style="width:10%" type="color" name="color"  class="form-control" id="colorpicker" value="{{ $Kategori->color }}">
                         {{-- <input type="text" name="color" class="form-control" placeholder="Color"> --}}
                     </div>
                 </div>
                 {{-- <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Color:</strong>
-                        <input type="text" name="color" value="{{ $layanan->color }}"  class="form-control" placeholder="Color">
+                        <input type="text" name="color" value="{{ $Kategori->color }}"  class="form-control" placeholder="Color">
                     </div>
                 </div> --}}
                 {{-- <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
@@ -877,7 +877,7 @@
                     <div class="form-group">
                         <strong>details:</strong>
                         <br>
-                        <textarea class="ckeditor" name="details" placeholder="details">{{ $layanan->details }}</textarea>
+                        <textarea class="ckeditor" name="details" placeholder="details">{{ $Kategori->details }}</textarea>
                     </div>
                 </div> --}}
 

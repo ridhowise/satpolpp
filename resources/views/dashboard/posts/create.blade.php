@@ -49,12 +49,12 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div style="width:20%;" class="form-group">
                         <strong>Kategori :</strong>
-                        <select name="layanan_id" id="layanan_id" class="form-control select" required>
+                        <select name="kategori_id" id="kategori_id" class="form-control select" required>
                         <option value="" style="text-align:center;" >-- PILIH Kategori --</option>
-                        @foreach ($Layanans as $layanan)
-                        <option value="{{$layanan->id}}" {{ old('layanan_id') == $layanan->id ? 'selected' : '' }}>{{ $layanan->nama}}</option>
+                        @foreach ($Kategoris as $kategori)
+                        <option value="{{$kategori->id}}" {{ old('kategori_id') == $kategori->id ? 'selected' : '' }}>{{ $kategori->nama}}</option>
                         @endforeach
-                        @error('layanan_id')
+                        @error('kategori_id')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                         @enderror
                         </select>

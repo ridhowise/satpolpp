@@ -1,11 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
 use App\Http\Controllers\HalamanUtamaController;
-use App\Http\Controllers\LayananController;
-use App\Http\Controllers\DetailsLayananController;
-use App\Http\Controllers\ObjekWisataController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\AuthController;
 
 /*
@@ -23,39 +21,34 @@ use App\Http\Controllers\AuthController;
 // Route::get('/', function () {zzzzzzzzzzzzzzzzz
 //     return view('welcome');
 // });
+Auth::routes();
 
 Route::get('/', [HalamanUtamaController::class, 'index']);
 Route::get('/dashboard', [HalamanUtamaController::class, 'dashboard'])->middleware('auth');
 Route::get('logout', [AuthController::class, 'logout']);
 
 // halaman Kategori
-Route::get('kategori/{slug_kategori}', [HalamanUtamaController::class, 'index_layanan']);
-Route::get('kategori/{slug_kategori}/{slug_detail}', [HalamanUtamaController::class, 'show_details_layanan']);
+Route::get('kategori/{slug_kategori}', [HalamanUtamaController::class, 'index_kategori']);
+Route::get('kategori/{slug_kategori}/{slug_detail}', [HalamanUtamaController::class, 'index_postingan']);
 
-Route::get('dashboard/kategori', [LayananController::class, 'index']);
-Route::get('dashboard/kategori/create', [LayananController::class, 'create']);
-Route::post('dashboard/kategori', [LayananController::class, 'store']);
-// Route::get('dashboard/kategori/{id}', [LayananController::class, 'show']);
-Route::get('dashboard/kategori/{id}/edit', [LayananController::class, 'edit']);
-Route::put('dashboard/kategori/{id}', [LayananController::class, 'update']);
-Route::delete('dashboard/kategori/{id}', [LayananController::class, 'destroy']);
+Route::get('dashboard/kategori', [KategoriController::class, 'index']);
+Route::get('dashboard/kategori/create', [KategoriController::class, 'create']);
+Route::post('dashboard/kategori', [KategoriController::class, 'store']);
+// Route::get('dashboard/kategori/{id}', [KategoriController::class, 'show']);
+Route::get('dashboard/kategori/{id}/edit', [KategoriController::class, 'edit']);
+Route::put('dashboard/kategori/{id}', [KategoriController::class, 'update']);
+Route::delete('dashboard/kategori/{id}', [KategoriController::class, 'destroy']);
 
-Route::get('dashboard/postingan', [DetailsLayananController::class, 'index']);
-Route::get('dashboard/postingan/create', [DetailsLayananController::class, 'create']);
-Route::post('dashboard/postingan', [DetailsLayananController::class, 'store']);
-// Route::get('dashboard/postingan/{id}', [DetailsLayananController::class, 'show']);
-Route::get('dashboard/postingan/{id}/edit', [DetailsLayananController::class, 'edit']);
-Route::put('dashboard/postingan/{id}', [DetailsLayananController::class, 'update']);
-Route::delete('dashboard/postingan/{id}', [DetailsLayananController::class, 'destroy']);
-
-
+Route::get('dashboard/postingan', [PostController::class, 'index']);
+Route::get('dashboard/postingan/create', [PostController::class, 'create']);
+Route::post('dashboard/postingan', [PostController::class, 'store']);
+// Route::get('dashboard/postingan/{id}', [PostController::class, 'show']);
+Route::get('dashboard/postingan/{id}/edit', [PostController::class, 'edit']);
+Route::put('dashboard/postingan/{id}', [PostController::class, 'update']);
+Route::delete('dashboard/postingan/{id}', [PostController::class, 'destroy']);
 
 
-
-
-
-// Route::resource('layanan', LayananController::class)->middleware('auth');
-// Route::resource('details-layanan', DetailsLayananController::class)->middleware('auth');
+// Route::resource('layanan', KategoriController::class)->middleware('auth');
+// Route::resource('details-layanan', PostController::class)->middleware('auth');
 // Route::resource('objek-wisata', ObjekWisataController::class);
 
-Auth::routes();

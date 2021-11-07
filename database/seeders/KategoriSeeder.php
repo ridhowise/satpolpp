@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use DB;
-use App\Models\Layanan;
+use App\Models\Kategori;
 use Illuminate\Database\Seeder;
 
-class LayananSeeder extends Seeder
+class KategoriSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,9 @@ class LayananSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('layanan')->delete();
+        DB::table('kategori')->delete();
 
-        $layanan = 
+        $kategori = 
         [
             [
                 'id'    => 1, 
@@ -62,7 +62,7 @@ class LayananSeeder extends Seeder
                 'color' => '#63ff8d'
             ],
         ];
-      Layanan::insert($layanan);
+      Kategori::insert($kategori);
     }
 
 }

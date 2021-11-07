@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'title', 'content'
-    ];
+    protected $table = 'post';
+    protected $fillable= ['kategori_id','image','title','subtitle','details','slug'];
+
+    public function kategori()
+    {
+        return $this->belongsTo(Kategori::class,'kategori_id');
+    }
 }

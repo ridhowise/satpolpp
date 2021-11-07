@@ -9,31 +9,30 @@
         $('.ckeditor').ckeditor();
     });
 </script>
-<!-- ======= Breadcrumbs ======= -->
-<div class="breadcrumbs" data-aos="fade-in">
-  <div class="container">
-    <h2>{{$Details->layanan->nama}}</h2>
-    <p>
-      {{-- @foreach ($Details as $detail) --}}
-      {{$Details->title}}
-      {{-- @endforeach --}}
-    </p>
-  </div>
-</div><!-- End Breadcrumbs -->
 
-<!-- ======= Cource Details Section ======= -->
-<section id="course-details" class="course-details">
+<div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+      
+      </div>
+    </div><!-- End Breadc
+<!-- ======= Breadcrumbs ======= -->
+
+
+<!-- ======= Cource Post Section ======= -->
+<section id="course-Post" class="course-Post">
   <div class="container" data-aos="fade-up">
 
     <div class="row">
    
         <div class="col-lg-12">
-        <img src="/images/{{$Details->image}}" class="img-fluid" alt="">
-        <h3> {{$Details->subtitle}} </h3>
+        <img src="/images/{{$Post->image}}" class="img-fluid" alt="">
+      
+        <h3 style="margin-top:60px;" > {{$Post->title}} </h3>
+        <p> {{$Post->subtitle}} </p>
         <div class="ckeditor">
       
           @php
-            echo $Details->details
+            echo $Post->Post
           @endphp	
         
         </div>
@@ -43,7 +42,7 @@
     </div>
 
   </div>
-</section><!-- End Cource Details Section -->
+</section><!-- End Cource Post Section -->
 
 
 </main><!-- End #main -->

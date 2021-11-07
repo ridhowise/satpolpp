@@ -40,17 +40,17 @@
         </div>
     
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          @foreach ($Layanans as $layanan)
+          @foreach ($Kategoris as $Kategori)
           <div class="col-lg-4 col-md-4 mt-4 mt-md-4">
             <div class="icon-box">
-              <i class="fa {{$layanan->icon}}" style="color: {{ $layanan->color}}"></i>
-              <h3><a href="{{ count($layanan->detailsLayanan) > 0 ? '/'.'kategori'.'/'.$layanan->slug : '#'  }}">{{ $layanan->nama}}</a></h3>
+              <i class="fa {{$Kategori->icon}}" style="color: {{ $Kategori->color}}"></i>
+              <h3><a href="{{ count($Kategori->post) > 0 ? '/'.'kategori'.'/'.$Kategori->slug : '#'  }}">{{ $Kategori->nama}}</a></h3>
             </div>
           </div>
           @endforeach
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center  mt-4 mt-md-4">
-              {{$Layanans->links('pagination::bootstrap-4')}}
+              {{$Kategoris->links('pagination::bootstrap-4')}}
             </ul>
           </nav>
         </div>
