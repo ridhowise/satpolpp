@@ -31,6 +31,7 @@ Route::get('logout', [AuthController::class, 'logout']);
 Route::get('kategori/{slug_kategori}', [HalamanUtamaController::class, 'index_kategori']);
 Route::get('kategori/{slug_kategori}/{slug_detail}', [HalamanUtamaController::class, 'index_postingan']);
 
+// halaman dashboard katagori
 Route::get('dashboard/kategori', [KategoriController::class, 'index']);
 Route::get('dashboard/kategori/create', [KategoriController::class, 'create']);
 Route::post('dashboard/kategori', [KategoriController::class, 'store']);
@@ -39,6 +40,7 @@ Route::get('dashboard/kategori/{id}/edit', [KategoriController::class, 'edit']);
 Route::put('dashboard/kategori/{id}', [KategoriController::class, 'update']);
 Route::delete('dashboard/kategori/{id}', [KategoriController::class, 'destroy']);
 
+// halaman dashboard post
 Route::get('dashboard/postingan', [PostController::class, 'index']);
 Route::get('dashboard/postingan/create', [PostController::class, 'create']);
 Route::post('dashboard/postingan', [PostController::class, 'store']);
@@ -46,7 +48,6 @@ Route::post('dashboard/postingan', [PostController::class, 'store']);
 Route::get('dashboard/postingan/{id}/edit', [PostController::class, 'edit']);
 Route::put('dashboard/postingan/{id}', [PostController::class, 'update']);
 Route::delete('dashboard/postingan/{id}', [PostController::class, 'destroy']);
-
 
 // Route::resource('layanan', KategoriController::class)->middleware('auth');
 // Route::resource('details-layanan', PostController::class)->middleware('auth');

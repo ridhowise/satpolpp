@@ -5,12 +5,19 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>web desa</title>
+  <title>Desa morongge selatan satu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="/assets/img/course-details-tab-1.png" rel="icon">
+  <link href="/assets/img/LOGO_KOTA_BITUNG_SULAWESI_UTARA.png" rel="icon">
   <!-- <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
@@ -27,7 +34,7 @@
 
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
-  {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
   <!-- =======================================================
   * Template Name: Mentor - v4.1.0
@@ -46,11 +53,11 @@
       <!-- <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
       
-      <a href="/" class="logo me-auto"><img src="/assets/img/course-details-tab-1.png" alt="" class="img-fluid"> web desa</a>
+      <a href="/" class="logo me-auto"><img src="/assets/img/LOGO_KOTA_BITUNG_SULAWESI_UTARA.png" alt="" class="img-fluid"> Desa morongge selatan satu</a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a  href="/">Home</a></li>
+          <li><a  href="/">Beranda</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Tentang</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/sejarah">Sejarah</a></li>
@@ -103,7 +110,7 @@
       </div>
 
       {{-- <div class="col-lg-2 col-md-6 footer-links">
-        <h4>Home</h4>
+        <h4>Beranda</h4>
         <ul>
           <li><i class="bx bx-chevron-right"></i> <a href="#">Galeri</a></li>
         </ul>

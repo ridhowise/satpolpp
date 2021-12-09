@@ -27,12 +27,13 @@
         <div class="col-lg-12">
         <img src="/images/{{$Post->image}}" class="img-fluid" alt="">
       
-        <h3 style="margin-top:60px;" > {{$Post->title}} </h3>
-        <p> {{$Post->subtitle}} </p>
+        <h2 style="margin-top:60px;" > {{$Post->title}} </h2>
+        <h3> {{$Post->subtitle}} </h3>
+        <!-- <p> {{$Post->details}} </p> -->
         <div class="ckeditor">
       
           @php
-            echo $Post->Post
+            echo $Post->details
           @endphp	
         
         </div>
@@ -46,7 +47,6 @@
 
 
 </main><!-- End #main -->
-
 
 
 @endsection
