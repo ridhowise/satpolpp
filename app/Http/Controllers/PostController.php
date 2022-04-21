@@ -73,7 +73,7 @@ class PostController extends Controller
 		$data->slug = $slug;
         $data->subtitle = $request->subtitle;
 		$data->details = $request->details;
-        $data->kategori_id = $request->kategori_id;
+        $data->kategori_id = 10;
         $data->image = $file_name;
 
         $data->save();

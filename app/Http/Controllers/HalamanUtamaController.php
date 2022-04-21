@@ -23,11 +23,12 @@ class HalamanUtamaController extends Controller
     public function index()
     {
         // $Layanans = Layanan::get();
-        $Kategoris = Kategori::with('post')->paginate(6);
+        $Kategoris = Kategori::with('post')->first();
+        $Posts = Post::with('Kategori')->where('kategori_id',"10")->paginate(3);
         $Kategoriz = Kategori::get();
         // $slug = Str::slug($Layanans->nama, '-');
 
-        return view("home.index", compact('Kategoris','Kategoriz'));
+        return view("home.index", compact('Kategoris','Kategoriz','Posts'));
     }
 
     

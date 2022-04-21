@@ -94,8 +94,7 @@
               <li><a href="#">Laporkan</a></li>
               <li><a href="#">Hotline</a></li>
               <li><a href="#">Survey Kepuasan</a></li>
-              <li><a href="#">Pengumuman</a></li>
-              <li><a href="#">Sitemap</a></li>
+              
 
             </ul>
           </li>

@@ -46,7 +46,7 @@
         <form action="/dashboard/postingan" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                {{-- <div class="col-xs-12 col-sm-12 col-md-12">
                     <div style="width:20%;" class="form-group">
                         <strong>Kategori :</strong>
                         <select name="kategori_id" id="kategori_id" class="form-control select" required>
@@ -59,7 +59,7 @@
                         @enderror
                         </select>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Judul :</strong>

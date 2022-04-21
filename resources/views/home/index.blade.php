@@ -95,35 +95,81 @@
     </div><!-- End Breadcrumbs -->
 
      <!-- ======= Features Section ======= -->
-     <section id="features" class="features" style='margin-top:100px'>
+    
+    <!-- End Features Section -->
+    <section id="features" class="features" style='margin-top:50px'>
+      <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2 style="color:red">Berita terbaru</h2>
+      <!-- <p>Popular berita</p> -->
+    </div>
+    <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+    <section class="cards-wrapper">
+      @foreach ($Posts as $Post)
+      <div class="col-lg-4 col-md-4 mt-4 mt-md-4">
+      <div class="cardz-grid-space">
+        <a class="cardz" href="/kategori/berita/{{$Post->slug}}" style="--bg-img: url(/images/{{$Post->image}})">
+          <div>
+            <h1>{{$Post->slug}}</h1>
+            <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
+            <div class="date">6 Oct 2017</div>
+            {{-- <div class="tags">
+              <div class="tag">HTML</div>
+            </div> --}}
+          </div>
+        </a>
+      </div>
+    </div>
+      @endforeach
+      
+      
+      <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+    </section>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center  mt-4 mt-md-4">
+        {{$Posts->links('pagination::bootstrap-4')}}
+      </ul>
+    </nav>
+  </div>
+    <section id="features" class="features" style='margin-top:50px'>
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Informasi</h2>
+          <h2 style="color:red" >Informasi</h2>
           <!-- <p>Popular berita</p> -->
         </div>
     
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          @foreach ($Kategoris as $Kategori)
+        
           <div class="col-lg-4 col-md-4 mt-4 mt-md-4">
             <div class="icon-box">
-              <i class="fa {{$Kategori->icon}}" style="color: {{ $Kategori->color}}"></i>
-              <h3><a href="{{ count($Kategori->post) > 0 ? '/'.'kategori'.'/'.$Kategori->slug : '#'  }}">{{ $Kategori->nama}}</a></h3>
+              <i class="fa {{$Kategoris->icon}}" style="color: {{ $Kategoris->color}}"></i>
+              <h3><a href="{{ count($Kategoris->post) > 0 ? '/'.'kategori'.'/'.$Kategoris->slug : '#'  }}">{{ $Kategoris->nama}}</a></h3>
             </div>
           </div>
-          @endforeach
+          <div class="col-lg-4 col-md-4 mt-4 mt-md-4">
+            <div class="icon-box">
+              <i class="fa fa-files-o" style="color:red"></i>
+              <h3><a href="/document">Dokumen</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 mt-4 mt-md-4">
+            <div class="icon-box">
+              <i class="fa fa-film" style="color:red"></i>
+              <h3><a href="/galeri">Galeri</a></h3>
+            </div>
+          </div>
           
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center  mt-4 mt-md-4">
-              {{$Kategoris->links('pagination::bootstrap-4')}}
             </ul>
           </nav>
         </div>
 
       </div>
     </section>
-    <!-- End Features Section -->
-
+  </section>
   </main>
   <!-- End #main -->
 
