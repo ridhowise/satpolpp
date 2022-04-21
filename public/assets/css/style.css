@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #2736fd;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 a:hover {
-  color: #085eff;
+  color: rgb(213, 213, 213);
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #2736fd;
+  background: #EA2027;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #2736fd;
+  border: 6px solid #EA2027;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #EA2027;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 #header .logo img {
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .get-started-btn {
   margin-left: 22px;
-  background: #2736fd;
+  background: #EA2027;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: #37423b;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #2736fd;
+  color: rgb(201, 201, 201);
 }
 
 .navbar .dropdown ul {
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #EA2027;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -250,7 +250,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #2736fd;
+  color: #fff;
+  background: #be1a20;
+
 }
 
 .navbar .dropdown:hover > ul {
@@ -345,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 .navbar-mobile .getstarted {
@@ -377,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -437,7 +439,7 @@ section {
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #2736fd;
+  background: #EA2027;
   padding: 8px 0;
   color: #fff;
 }
@@ -478,11 +480,11 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #2736fd;
+  color: #EA2027;
 }
 
 .about .content .learn-more-btn {
-  background: #2736fd;
+  background: #EA2027;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px 9px 25px;
@@ -514,7 +516,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #2736fd;
+  color: #EA2027;
   font-weight: 700;
 }
 
@@ -532,7 +534,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 30px;
-  background: #2736fd;
+  background: #EA2027;
   border-radius: 4px;
   color: #fff;
 }
@@ -561,7 +563,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #2736fd;
+  color: #EA2027;
   background: #fff;
 }
 
@@ -576,7 +578,7 @@ section {
 .why-us .icon-boxes .icon-box i {
   font-size: 32px;
   padding: 18px;
-  color: #2736fd;
+  color: #EA2027;
   margin-bottom: 30px;
   background: #ecf9f0;
   border-radius: 50px;
@@ -628,11 +630,11 @@ section {
 }
 
 .features .icon-box:hover {
-  border-color: #2736fd;
+  border-color: #EA2027;
 }
 
 .features .icon-box:hover h3 a {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 /*--------------------------------------------------------------
@@ -658,7 +660,7 @@ section {
 }
 
 .courses .course-content h3 a:hover {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 .courses .course-content p {
@@ -668,7 +670,7 @@ section {
 
 .courses .course-content h4 {
   font-size: 14px;
-  background: #2736fd;
+  background: #EA2027;
   padding: 7px 14px;
   color: #fff;
   margin: 0;
@@ -750,7 +752,7 @@ section {
 }
 
 .trainers .member .social a:hover {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 .trainers .member .social i {
@@ -829,11 +831,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #2736fd;
+  border: 1px solid #EA2027;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #2736fd;
+  background-color: #EA2027;
 }
 
 @media (max-width: 767px) {
@@ -878,7 +880,7 @@ section {
   display: block;
   width: 60px;
   height: 1px;
-  background: #2736fd;
+  background: #EA2027;
   bottom: 0;
   left: 0;
 }
@@ -929,12 +931,12 @@ section {
 }
 
 .cource-details-tabs .nav-link:hover {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 .cource-details-tabs .nav-link.active {
-  color: #2736fd;
-  border-color: #2736fd;
+  color: #EA2027;
+  border-color: #EA2027;
 }
 
 .cource-details-tabs .tab-pane.active {
@@ -964,7 +966,7 @@ section {
   }
   .cource-details-tabs .nav-link.active {
     color: #fff;
-    background: #2736fd;
+    background: #EA2027;
   }
 }
 
@@ -1025,7 +1027,7 @@ section {
 }
 
 .events .read-more a:hover {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 .events .card:hover img {
@@ -1033,11 +1035,11 @@ section {
 }
 
 .events .card:hover .card-body {
-  border-color: #2736fd;
+  border-color: #EA2027;
 }
 
 .events .card:hover .card-body .card-title a {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 /*--------------------------------------------------------------
@@ -1065,7 +1067,7 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #2736fd;
+  color: #EA2027;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1097,7 +1099,7 @@ section {
 }
 
 .pricing ul i {
-  color: #2736fd;
+  color: #EA2027;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1115,7 +1117,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #2736fd;
+  background: #EA2027;
   display: inline-block;
   padding: 8px 35px;
   border-radius: 50px;
@@ -1134,7 +1136,7 @@ section {
 
 .pricing .featured h3 {
   color: #fff;
-  background: #2736fd;
+  background: #EA2027;
 }
 
 .pricing .advanced {
@@ -1146,7 +1148,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #2736fd;
+  background: #EA2027;
   color: #fff;
 }
 
@@ -1164,7 +1166,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #2736fd;
+  color: #EA2027;
   float: left;
   width: 44px;
   height: 44px;
@@ -1196,7 +1198,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #2736fd;
+  background: #EA2027;
   color: #fff;
 }
 
@@ -1258,7 +1260,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #2736fd;
+  border-color: #EA2027;
 }
 
 .contact .php-email-form input {
@@ -1270,7 +1272,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #2736fd;
+  background: #EA2027;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1354,7 +1356,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #2736fd;
+  color: #EA2027;
   font-size: 18px;
   line-height: 1;
 }
@@ -1378,7 +1380,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #2736fd;
+  color: #EA2027;
 }
 
 #footer .footer-newsletter {
@@ -1418,7 +1420,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #2736fd;
+  background: #EA2027;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1440,13 +1442,13 @@ section {
 }
 
 #footer .credits a:hover {
-  color: #2736fd;
+  color: #EA2027;
 }
 
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #2736fd;
+  background: #EA2027;
   color: #fff;
   line-height: 1;
   padding: 8px 0;

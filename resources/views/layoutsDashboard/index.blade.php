@@ -45,7 +45,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-vote-yea"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Web Desa<sup></sup></div>
+                <div class="sidebar-brand-text mx-3">SATPOL PP KOTA BITUNG<sup></sup></div>
             </a>
 
             <!-- Divider -->

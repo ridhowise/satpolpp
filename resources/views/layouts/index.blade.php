@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Desa morongge selatan satu</title>
+  <title>SATPOL PP KOTA BITUNG</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -53,20 +53,52 @@
       <!-- <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
       
-      <a href="/" class="logo me-auto"><img src="/assets/img/LOGO_KOTA_BITUNG_SULAWESI_UTARA.png" alt="" class="img-fluid"> Desa morongge selatan satu</a>
+      <a href="/" class="logo me-auto"><img src="/assets/img/LOGO_KOTA_BITUNG_SULAWESI_UTARA.png" alt="" class="img-fluid"> SATPOL PP KOTA BITUNG</a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a  href="/">Beranda</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Tentang</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a  href="/">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="/sejarah">Sejarah</a></li>
-              <li><a href="/arti-lambang">Arti lambang web desa</a></li>
-              <li><a href="#">Geografi</a></li>
+              <li><a href="#">Sejarah</a></li>
+              <li><a href="#">Struktur Organisasi</a></li>
+              <li><a href="#">Tupoksi</a></li>
+              <li><a href="#">Susunan Organisasi</a></li>
+
              
             </ul>
-          </li> -->
+          </li>
+          <li><a  href="/">Berita</a></li>
 
+          <li class="dropdown"><a href="#"><span>Galeri</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Gambar</a></li>
+              <li><a href="#">Video</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Program</a></li>
+              <li><a href="#">Kampanye Kinerja ASN</a></li>
+              <li><a href="#">Agenda</a></li>
+              <li><a href="#">Pengumuman</a></li>
+              <li><a href="#">Sitemap</a></li>
+
+            </ul>
+          </li>
+          <li><a  href="/">Dokumen</a></li>
+
+          <li class="dropdown"><a href="#"><span>Hubuungi Kami</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Laporkan</a></li>
+              <li><a href="#">Hotline</a></li>
+              <li><a href="#">Survey Kepuasan</a></li>
+              <li><a href="#">Pengumuman</a></li>
+              <li><a href="#">Sitemap</a></li>
+
+            </ul>
+          </li>
           <!-- <li  class="dropdown"><a href="#"><span></span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               @foreach ($Kategoriz as $layanan)
@@ -101,7 +133,7 @@
     <div class="row">
 
       <div class="col-lg-3 col-md-6 footer-contact">
-        <h4>Web Desa</h4>
+        <h4>Satpol PP</h4>
         <p>
 
           <strong>Phone:</strong> +1 5589 55488 55<br>
